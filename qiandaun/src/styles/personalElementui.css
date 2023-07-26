@@ -1,0 +1,310 @@
+.content-box {
+  height: calc(100vh - 140px - 90px);
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+  /* 对应纵向滚动条的宽度 */
+  width: 5px;
+  /* 对应横向滚动条的宽度 */
+  height: 5px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #fbfcfd;
+  border-radius: 32px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 32px;
+}
+
+.dv-border-box-10 .border-box-content {
+  height: calc(100vh - 140px - 90px - 63px);
+  overflow-y: auto;
+}
+
+.el-form-item__label {
+  color: #ffffff;
+  /* font-size: 13px; */
+  font-weight: inherit;
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 172px;
+}
+
+.el-form--inline .el-form-item {
+  margin-right: 50px;
+}
+
+/* 单选框组件 */
+.el-radio {
+  color: #fff;
+}
+
+.el-radio__label {
+  /* font-size: 12px; */
+}
+
+.el-radio__inner {
+  border: 1px solid #ffffff;
+  background: none;
+  /* height: 12px; */
+  /* width: 12px; */
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border: 1px solid #3270eb;
+  background: none;
+}
+
+.el-radio__inner::after {
+  background: #3270eb;
+  box-shadow: 0px 0px 5px 1px #6eecff, inset 0px 0px 6px 1px #50f3ee;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: #ffffff;
+}
+
+/* 输入框组件 */
+.el-input__inner {
+  background: none;
+  color: #fff;
+}
+
+.el-date-picker__time-header .el-input__inner {
+  color: #606266 !important;
+}
+
+/* 弹框 */
+.el-dialog {
+  background: url('../assets/img/dialog-bg.png');
+  background-size: 100% 100%;
+}
+
+.el-dialog .dialog-title {
+  color: #ffffff;
+}
+
+.el-dialog__header {
+  padding: 40px 20px 10px;
+}
+
+.el-dialog--center .el-dialog__body {
+  padding: 30px 40px;
+}
+
+.el-dialog .el-input__inner {
+  background: #ffffff;
+  color: #000000;
+}
+
+.el-dialog .dialog-title {
+  position: relative;
+}
+
+.el-dialog .box {
+  color: #fff;
+}
+
+.el-dialog .box .Copywriting {
+  text-align: center;
+}
+
+.el-dialog .box p {
+  margin: 0;
+}
+
+.el-dialog .dialog-title .close {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  font-size: 25px;
+  cursor: pointer;
+  color: #5CD6EE;
+}
+
+.el-dialog__footer {
+  padding: 10px 20px 40px;
+}
+
+/* 树形图 */
+#information-left .el-tree {
+  background: none;
+  color: #fff;
+}
+
+#information-left .el-tree-node__content:hover {
+  background: rgba(80, 243, 238, 0.2);
+  box-shadow: 0px 0px 1px 1px #6EECFF, inset 0px 0px 6px 1px #5FFFFA;
+}
+
+#information-left .el-tree-node:focus>.el-tree-node__content {
+  background: rgba(80, 243, 238, 0.2);
+  box-shadow: 0px 0px 1px 1px #6EECFF, inset 0px 0px 6px 1px #5FFFFA;
+}
+
+#information-left .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background: rgba(80, 243, 238, 0.2);
+  color: #50F3EE;
+  box-shadow: 0px 0px 1px 1px #6EECFF, inset 0px 0px 6px 1px #5FFFFA;
+}
+
+#information-left .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content .el-tree-node__expand-icon {
+  color: #50F3EE;
+}
+
+#information-left .el-tree-node__expand-icon.is-leaf {
+  color: transparent !important;
+}
+
+
+/* 树形结构节点添加连线 css */
+#information-left .el-tree>.el-tree-node:after {
+  border-top: none;
+}
+
+#information-left .el-tree-node {
+  position: relative;
+  padding-left: 16px;
+}
+
+/* //节点有间隙，隐藏掉展开按钮就好了,如果觉得空隙没事可以删掉
+.el-tree-node__expand-icon.is-leaf {
+  display: none;
+} */
+
+#information-left .el-tree-node__children {
+  padding-left: 16px;
+}
+
+#information-left .el-tree-node :last-child:before {
+  height: 38px;
+}
+
+#information-left .el-tree>.el-tree-node:before {
+  border-left: none;
+}
+
+#information-left .el-tree>.el-tree-node:after {
+  border-top: none;
+}
+
+#information-left .el-tree-node:before {
+  content: "";
+  left: -4px;
+  position: absolute;
+  right: auto;
+  border-width: 1px;
+}
+
+#information-left .el-tree-node:after {
+  content: "";
+  left: -4px;
+  position: absolute;
+  right: auto;
+  border-width: 1px;
+}
+
+#information-left .el-tree-node:before {
+  border-left: 1px dashed #4386c6;
+  bottom: 0px;
+  height: 100%;
+  top: -26px;
+  width: 1px;
+}
+
+#information-left .el-tree-node:after {
+  border-top: 1px dashed #4386c6;
+  height: 20px;
+  top: 12px;
+  width: 24px;
+}
+
+/* 去除table边框 */
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+  border-right: none;
+}
+
+.el-table--border th,
+.el-table__fixed-right-patch {
+  border-bottom: none;
+}
+
+.el-table--border,
+.el-table--group {
+  border: none;
+}
+
+.el-table--border::after,
+.el-table--group::after {
+  width: 0;
+}
+
+/* 去除table边框 */
+
+/* 除尘运行报表表头定制样式 */
+.columu-customized .cell {
+  width: 45px !important;
+  /* writing-mode: vertical-lr */
+}
+
+.el-table th[class~="columu-customized"] {
+  background-color: #164277 !important;
+  border-bottom: none;
+}
+
+.el-table,
+.el-table__expanded-cell {
+  background: transparent;
+  color: #fff;
+}
+
+.el-table__row {
+  background-color: #164277 !important;
+}
+
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom-color: #1f5495 !important;
+}
+
+.el-table::before {
+  height: 0;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background: transparent;
+}
+
+/* 下拉框 */
+.el-input--mini .el-input__suffix {
+  height: 28px;
+}
+
+/* 分页 */
+.pagination {
+  margin-top: 15px;
+}
+
+.el-pagination,
+.el-pagination__total,
+.el-pagination__jump {
+  color: #ffffff;
+}
+
+.el-pagination .btn-next,
+.el-pagination .btn-prev,
+.el-pagination button:disabled,
+.el-pager li {
+  color: #ffffff;
+  background: transparent;
+}
